@@ -54,6 +54,7 @@ def main():
             if  feature_choice == 'Face Detection':
                 result_img, result_face = detect_faces(image)
                 st.success("Found {} faces".format(len(result_face)))
+                st.image(result_img)
     else:
         st.subheader("About")
         st.markdown("Build with Streamlit and Open CV")
